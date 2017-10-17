@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projekty</title>
+    <link rel="stylesheet" href="styles/mini-default.min.css">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+    <script type="text/javascript" src="scripts/main.js"></script>
+</head>
+<body>  
+    <div class="spinner-donut large"></div>
+<div class="tabs">
+  <input type="radio" name="tab-group" id="tab1" checked aria-hidden="true">
+  <label for="tab1" aria-hidden="true">Projekty</label>
+  <div>
+      <div class="btn-group">
+          <button div class="small tertiary">Zielony</button >
+          <button  class="large secondary">Niebieski</button >
+          <button  class="inverse">Ciemny</button >
+      </div>
+    <table id="listProjects">
+    <thead>
+        <th>Nazwa</th>
+        <th>Wymagania</th>
+        <th>Termin ukończenia</th>
+        <th>Pracownicy</th>
+    </thead>
+    <tbody>
+    </tbody>
+    </table>
+  </div>
+  <input type="radio" name="tab-group" id="tab2" aria-hidden="true">
+  <label for="tab2" aria-hidden="true">Pracownicy</label>
+  <div>
+<label for="modal-toggle">Show modal</label>
+
+<input id="modal-toggle" type="checkbox"/>
+<div class="modal">
+  <div class="card warning large">
+    <label for="modal-toggle" class="close"></label>
+    <h3 class="section">Podaj id projektu</h3>
+    <div class="section">
+         <input id="project" type="text" placeholder="#101">
+        <button class="tertiary">Dodaj</button>
+        </div>
+
+  </div>
+</div>
+
+    <table id="listEmployees">
+        <thead>
+            <th>Imię</th>
+            <th>Umiejętności</th>
+            <th>Dostępność</th>
+            <th>Akcje</th>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+  </div>
+  <input type="radio" name="tab-group" id="tab3" aria-hidden="true">
+  <label for="tab3" aria-hidden="true">Dodaj pracownika</label>
+  <div>
+<form>
+    <fieldset>
+        <div class="input-group fluid">
+            <label for="name">Imię</label>
+            <input id="name" type="text" placeholder="Wpisz imię">
+            <span class="pure-form-message-inline">This is a required field.</span>
+        </div>
+
+        <div class="input-group fluid">
+            <label for="skills">Umiejętności</label>
+            <input id="skills" type="text" placeholder="Wpisz po przecinku">
+        </div>
+
+        <div class="input-group fluid">
+            <label for="availability">Dostępność</label>
+            <input id="availability" type="number" placeholder="Wpisz wymiar etatu">
+        </div>
+        <div class="row">
+            <button type="submit" class="col-md-offset-3 col-md-4">
+                Submit</button>
+        </div>
+    </fieldset>
+</form>
+  </div>
+</div>
+
+</body>
+</html>
